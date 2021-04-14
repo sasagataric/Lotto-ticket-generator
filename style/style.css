@@ -1,0 +1,30 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    text-align: center;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    text-align: center;
+    -moz-appearance:textfield; 
+}
+table { 
+    border-spacing: 10px;
+    border-collapse: separate !important;
+    border-color: red !important;
+    border-radius: 10px;
+}
+td{
+    border-color: rgb(255, 97, 97) !important;
+    justify-content: center;
+    align-items: center;
+    padding: 3px !important;
+    border-radius: 5px;
+    text-align: center;
+}
+.crossed
+{
+   background-image: linear-gradient(to bottom right,  transparent calc(50% - 4px), rgba(255, 0, 0, 0.7), transparent calc(50% + 4px)), 
+   linear-gradient(to bottom left,  transparent calc(50% - 4px), rgba(255, 0, 0, 0.7), transparent calc(50% + 4px)) ; 
+}

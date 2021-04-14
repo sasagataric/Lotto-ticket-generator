@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"> 
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-12">
+                <form id="form" class=" mt-5 input-group justify-content-center">
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39" class="col" id="input1" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input2" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input3" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input4" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input5" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input6" >
+                    <input name="ticketNumber" class="mr-1" type="number" min="1" max="39"  class="col" id="input7" >
+                    <botton class="btn bg-primary text-white" onclick="showLotoTicket()">Show</botton>
+                </form>
+            </div>
+            <div  class=" mt-5">
+                <table id="createTabel" class="table table-bordered"  style="visibility: hidden;">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/LotoTicket.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
