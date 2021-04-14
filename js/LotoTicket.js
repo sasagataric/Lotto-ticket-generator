@@ -1,5 +1,4 @@
 function showLotoTicket() {
-    $("#createTabel").empty().append(createTable()); 
     var numbers=$('input[name="ticketNumber"]').map(function() {
         return this.value || null;
     }).get();
@@ -8,7 +7,8 @@ function showLotoTicket() {
     if(!validate(numbers)){
         return;
     }
-
+    
+    $("#createTabel").empty().append(createTable()); 
     for(key=0; key < numbers.length; key++)  {
         document.getElementById(numbers[key]).className+="crossed"
     }
