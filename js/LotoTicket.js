@@ -12,10 +12,8 @@ function showLotoTicket() {
     for(key=0; key < numbers.length; key++)  {
         document.getElementById(numbers[key]).className+="crossed"
     }
-    $("table").css("visibility","visible");
 };
 function validate (input){
-
     if(input.length!==7){
         alert("Insert all numbers");
             $("table").css("visibility","hidden");
@@ -32,11 +30,11 @@ function validate (input){
             $("table").css("visibility","hidden");
             return false;
     }
-    
     return true;
 };
 function createTable(){
     var id=1;
+    var table = $('<table>').addClass('table table-bordered');
     for(i=1; i<14; i++){
         var tr = $('<tr>').addClass('');
         for(y=1; y<4; y++){
@@ -44,6 +42,7 @@ function createTable(){
             tr.append(td);
             id++;
         }
-        $('#createTabel').append(tr);
+        table.append(tr);
     }
+    $('#createTabel').append(table);
 }
